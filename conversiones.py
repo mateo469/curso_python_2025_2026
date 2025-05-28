@@ -1,0 +1,17 @@
+#los operadores lógicos se utilizan para combinar condiciones booleanas (verdadero o falso).
+
+#Ejemplo practico{}
+temperatura = int(input('Cual es la temperatura de hoy \n'))
+
+if not(temperatura >=0 and temperatura <=30):
+    print('La temperatura esta muy alta hoy')
+elif not(temperatura < 0 or temperatura > 30):
+    print('La temperatura esta bien hoy')
+    
+#Ejemplo 2
+a = 5
+b = 10
+if a > 0 and b > a:
+    print("Ambas condiciones son verdaderas") 
+elif a > 0 or b < a:
+     print("Al menos una condición es verdadera")  # ✅ 
