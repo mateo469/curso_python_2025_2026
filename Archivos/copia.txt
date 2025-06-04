@@ -1,0 +1,13 @@
+$x = 5;      // $x is an integer
+$y = "John"; // $y is a string
+echo $x;
+echo $y;
+
+#Hola mundo en java
+public class HolaMundo{
+    public static void main(String args[]){
+        String primerVariable = "Hola mundo";
+        //Imprimir la variable
+        System.out.println(primerVariable);
+    }
+}

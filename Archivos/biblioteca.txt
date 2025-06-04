@@ -1,0 +1,102 @@
+use biblioteca
+
+
+select * from 
+
+
+/*
+create table Carrera(IDCart int primary key identity(1,1) NOT NULL,
+NCarrera nvarchar(100) not null,
+);
+
+go
+
+CREATE TABLE Alumnos(
+IDAlumno int primary key identity(1,1) NOT NULL,
+ NControl nvarchar(20) NOT NULL,
+  NAlumno varchar(40) NOT NULL,
+  Apepat varchar(25) NOT NULL,
+  Apemat varchar(25) NOT NULL,
+  NCalle varchar(40) NOT NULL,
+  Colonia varchar(40) NOT NULL,
+  Municipio varchar(60) NOT NULL,
+  Estado varchar(60) NOT NULL,
+  Telefono nvarchar(12)  NULL,
+  IDCar int NOT NULL,
+  correo nvarchar(80) NOT NULL
+  );
+
+  select * from Alumnos
+
+
+
+  CREATE TABLE Editorial(
+  IdEditorial int identity(1,1)not null,
+  NEditorial varchar(100)not null
+  primary key (IdEditorial));
+
+  go
+
+
+  CREATE TABLE Proveedor(
+IDProveedor int IDENTITY(1,1) NOT NULL,
+NProveedor nvarchar(20) NOT NULL,
+Direccion varchar(200) NOT NULL,
+Telefono nvarchar(15) NOT NULL,
+Correo nvarchar(50) NOT NULL,
+PRIMARY KEY (IDProveedor));
+
+
+go
+
+
+CREATE TABLE Autor(
+IDAutor int IDENTITY(1,1) NOT NULL,
+NAutor varchar(150) NOT NULL,
+PRIMARY KEY (IDAutor));
+
+go
+
+
+CREATE TABLE Libro(
+IdLibro int IDENTITY(1,1) NOT NULL,
+ISBN nvarchar(80) NOT NULL,
+Titulo varchar(200) NOT NULL,
+IDAutor int NOT NULL,
+IdEditorial int NOT NULL,
+NroPag int,
+IDCar int NOT NULL,
+IDProveedor int NOT NULL,
+Stock int NULL,
+Precio float NOT NULL,
+Descripcion varchar(1000) NOT NULL,
+FechaPub date NOT NULL,
+FechaAlta date NOT NULL,
+PRIMARY KEY (IdLibro));
+
+go
+
+
+CREATE TABLE Administradores(
+IDAdmin int IDENTITY(1,1) NOT NULL,
+NAdmin nvarchar(120) NOT NULL,
+Nusuario Varchar(30) NOT NULL,
+Passw nvarchar(12) NOT NULL,
+FechaReg date NOT NULL,
+PRIMARY KEY (IDAdmin));
+
+
+go
+
+CREATE TABLE Prestamos(
+IDPrestamo int IDENTITY(1,1) NOT NULL,
+IDAlumno int NOT NULL,
+IdLibro int NOT NULL,
+IDAdmin int,
+FechaPrest date NOT NULL,
+FechaDev date NOT NULL,
+PRIMARY KEY (IDPrestamo));
+
+go
+
+*/
