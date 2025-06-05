@@ -11,3 +11,26 @@ try:
    shutil.copyfile('archi.txt', 'Archivos\\copia.txt')
 except FileNotFoundError: 
     print('No se puede realizar la copia el archivo original no existe')
+    
+#Forma 2 de copiar archivos
+"""import shutil
+
+origen = 'ruta/original/archivo.txt'
+destino = 'ruta/destino/archivo.txt'
+
+shutil.copy(origen, destino)"""
+
+#Forma 3 Copiar una carpeta completa:
+
+"""shutil.copytree('ruta/origen_carpeta', 'ruta/destino_carpeta')
+Nota: copytree requiere que el destino no exista previamente."""
+
+#hacer un copiado y verificar si el archivo existe
+import os
+origen = 'archi.txt'
+destino = 'Archivos\\copiaverificada.txt'
+if os.path.exists(origen):
+   shutil.copy(origen, destino)
+   print('El archivo se ha copiado correctamente')
+else:
+   print('El archivo no de origen existe')

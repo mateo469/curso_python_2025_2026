@@ -9,5 +9,13 @@ public class HolaMundo{
         String primerVariable = "Hola mundo";
         //Imprimir la variable
         System.out.println(primerVariable);
+
+        //realizar una suma
+        int num1;
+        int num2;
+        num1 = 20;
+        num2 = 40;
+        int resultado = num1 + num2;
+        Systema.out.println(resultado);
     }
 }
