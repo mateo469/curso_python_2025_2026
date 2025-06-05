@@ -18,3 +18,10 @@ if ingresa_edad >= 18:
 else:
     print('No puedes ir a la fiesta eres menor de edad')
 print(f'Su edad es: ',ingresa_edad)
+
+#Ejemplo de numeros pares e impares
+num = 10
+if num % 2==0:
+    print('par')
+else:
+    print('Impar')
