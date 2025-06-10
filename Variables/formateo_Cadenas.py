@@ -27,3 +27,17 @@ print(mensaje)
 num = 1234567
 print(f"separador de miles {num:,}")  # "1,234,567" (con separador de miles)
 print(f"{num:.2f}")  # "1234567.00" (con 2 decimales)
+
+
+#Método .format()
+#Compatible desde Python 2.7 y 3.0 en adelante.
+#Forma 2 de formateos de cadenas
+nombre = "Carlos"
+edad = 25
+print("Hola, mi nombre es {} y tengo {} años.".format(nombre, edad))
+
+#Metodo 3
+#Formato estilo C (%) (menos recomendado, pero útil en algunos casos)
+nombre = 'Juan'
+edad = 30
+print("Hola, mi nombre es %s y tengo %d años de edad." % (nombre, edad))

@@ -22,6 +22,14 @@ informacion()
 informacion('Maria')
 informacion('Jessica')
 
+#Variables globales y locales
+mensaje = 'Soy variable global'
+def funciones(mensaje):
+    mensaje = 'Soy variable local'
+    print(mensaje)
+funciones(mensaje)
+print(mensaje)
+
 #Funciones con numeros de variables de argumentos
 def listar(*nombre):
     print('Esta es la listas de amigos' )
