@@ -24,9 +24,9 @@ finally:
     print('Finalizando Operacion')
     
 #ejemplo 2, mostrar el nombre de la fruta y el color
-fruta = input('Ingrese el nombre de las fruta (manzana, limon, naranja, fresa, banana)\n') 
+fruta = input('Ingrese el nombre de las fruta (manzana, limon, naranja, fresa, banana)\n').lower() 
 #convertir la fruta a minuscula
-fruta = fruta.lower()
+
 if fruta == 'manzana':
     print('La manzana, es de colores diferentes, roja, verde, amarilla'.upper())
 elif fruta == 'limon':
@@ -34,7 +34,7 @@ elif fruta == 'limon':
 elif fruta == 'naranja':
     print('La naranja es de color naranja'.upper())
 elif fruta == 'fresa':
-    print('La fresa es de color roja'.upper)
+    print('La fresa es de color roja'.upper())
 elif fruta == 'banana':
     print('La banana es de color amarilla'.upper())
 else:

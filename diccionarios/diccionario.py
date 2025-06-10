@@ -18,7 +18,7 @@ print(f'Edad {element}')
 longitud = len(mi_diccionario)
 print(f'Tamaño del diccionario: {longitud}')
 
-#agregar un nuevo eleemnto al diccionario
+#agregar un nuevo elemento al diccionario
 mi_diccionario['sexo'] = 'masculino'
 print(mi_diccionario)
 
