@@ -37,6 +37,15 @@ def listar(*nombre):
         print(list)
 listar('Marcos', 'Jessica', 'Estrella', 'Amigo no disponible')
 
+#Ejemplo 2 de variables con argumentos
+def funcion_args(nombre, *paises):
+    print(f'Hola {nombre}')
+    print('Lista de paises visitados' )
+    for lista in paises: 
+     print(lista)
+funcion_args('Maria', 'Mexico', 'Europa', 'Chile', 'Tokio')
+
+
 #Ejemplos de funciones con Kwargs
 def funtion_kwargs(**datos):
     print('Esta es un tipo de funcion con Kwargs')

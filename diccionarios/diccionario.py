@@ -14,9 +14,12 @@ print('Acceder a un valor per medio de las claves: ', mi_diccionario["nombre"]) 
 #Acceder a un elemento con get()
 element = mi_diccionario.get('edad')
 print(f'Edad {element}')
+
 #Tamaño del diccionario
 longitud = len(mi_diccionario)
 print(f'Tamaño del diccionario: {longitud}')
+
+print('---------------------------------------')
 
 #agregar un nuevo elemento al diccionario
 mi_diccionario['sexo'] = 'masculino'
@@ -29,6 +32,7 @@ print(f'Modificado: {mi_diccionario}')
 ##Acceder a las claves 
 claves = mi_diccionario.keys()
 print(f'claves {claves} ')
+print('-----------------------------------------')
 
 #Acceder a los valores de un diccionario
 valores = mi_diccionario.values()

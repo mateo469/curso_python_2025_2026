@@ -17,10 +17,14 @@ posicion = nombre.find('m') #Devuelve el numero de posicion donde se encuentra
 print(f'posicion encontrada: {posicion}')
 Prm_mayusc = nombre.capitalize()#pone la primer letra en mayuscula de la cadena
 print(f'Primer Mayuscula {nombre}')
+
 digito = nombre.isdigit()#Devuelve true si la cadena es de digito.
 print(f'Es digito: {digito}')
 
-print(nombre* 3)#Repite el nombre 3 veces
+alfabetico = nombre.isalpha() #Devuelve verdadero si es alfabetico es decir no contiene digitos o signos
+print(f'Alfabeto {alfabetico}')
+
+print(nombre * 3)#Repite el nombre 3 veces
 saludo = 'hola Mundo'
 caracter_especial = saludo.isalpha()#Devuelve true, si en la cadena no hay caracteres especiales.
 print(f'Tiene caracter especial: {caracter_especial}')

@@ -18,13 +18,14 @@ print('Acceder a un elemento en la lista: ', Lista_Vacia[1])
 for list in Lista_Vacia:
     print(list)
 
-print('\n')
+print('-----------------------------------------------')
 
 ##Ejemplo 2
 #Crear una listas con elementos
 Lista = ['Hola','Bienvenidos','Yamileth','Mish','Ariana','Estrella','esmeralda']
 ##Acceder a un elemento de la lista
-print(Lista[3])
+print(Lista[2::2])
+
 #Verificar si un valor se encuentra en la lista
 if 'Santiago' in Lista:
     print('El objeto se encuentra en la lista')
