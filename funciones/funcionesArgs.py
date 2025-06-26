@@ -3,6 +3,7 @@ posicionales. Esto te permite pasar cualquier cantidad de argumentos sin tener q
 todos previamente en la firma de la función.
 """
 #Ejemplo basico de funciones con parametros. Numeros de argumentos
+#Argumentos con posicion
 def funtion(nombre, apellido):
     print(f'Hola {nombre} {apellido}')
 funtion('Maria', 'Lopez')

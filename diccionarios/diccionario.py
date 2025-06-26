@@ -1,5 +1,20 @@
 """En Python, un diccionario (dict) es una estructura de datos que almacena pares clave-valor. 
 Son muy útiles cuando quieres asociar un valor a una clave única, similar a un mapa o tabla de búsqueda."""
+#Crear un diccionario simple
+animal = {
+    'nombre': 'Toby',
+    'color':['Negro', 'Blanco'],
+    'raza': 'Pastor aleman'
+}
+#Acceder a un valor
+print(animal['nombre'])
+#Agregar nuevo elemento
+animal['edad'] = 1
+print('nuevo elemento', animal)
+
+#Eliminar un elemento.
+del animal['edad']
+print('Elemento eliminado', animal)
 
 #Ejemplo basico de diccionarios
 mi_diccionario = {
@@ -8,9 +23,10 @@ mi_diccionario = {
     'altura': 1.55,
     "ciudad": "Huimanguillo",
     "color": ["rojo", "verde", "Amarillo"]
-}
+} 
 #Acceder a una clave y obtener el valor
-print('Acceder a un valor per medio de las claves: ', mi_diccionario["nombre"])  # Salida: Mateo
+print('Acceder a un valor por medio de las claves: ', mi_diccionario["nombre"])  # Salida: Mateo
+
 #Acceder a un elemento con get()
 element = mi_diccionario.get('edad')
 print(f'Edad {element}')
@@ -23,6 +39,7 @@ print('---------------------------------------')
 
 #agregar un nuevo elemento al diccionario
 mi_diccionario['sexo'] = 'masculino'
+mi_diccionario['Estado civil'] = 'Soltero'
 print(mi_diccionario)
 
 #Modificar un valor de una clave
@@ -46,10 +63,17 @@ print(clave_valor)
 eliminar = mi_diccionario.pop("ciudad")
 print(f'Actualizado de eliminacion: {mi_diccionario}')
 
+#Verificar si una clave de propiedad existe en el diccionario
+if 'estado' in mi_diccionario:
+    print('la clave estado se encuentra dentro de mi diccionario llamado mi_diccionario')
+else:
+    print('La clave no existe en mi diccionario')
+
 #imprimir el diccionario completo usando for
 for x in mi_diccionario.keys(): #Imprime las claves
     print(f'Clave {x}')
-    
+    print('---------**************************_____________+++++++++++++++xxxxxxxxxxxxxx')
 #Imprimir claves vs valores
 for a, b in mi_diccionario.items():#Imprime claves y valores
-    print(f'Claves: {a}. Valores: {b}')
+    print(f'{a}. {b}')
+    print('----------+++++++++++++---------------------')
