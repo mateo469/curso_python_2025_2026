@@ -33,3 +33,17 @@ import time
 for n in range(10, -1, -1):
     print(n)
     time.sleep(1)
+    
+#Bucle for anidado
+lista1 = ['A','B','C','D']
+lista2 = [10, 20, 40, 70]
+for x in lista1:
+    for y in lista2:
+        print(f'{x} x {y}')
+        print('----------------')
+        
+#Enumerate()
+lista3 = [20,80,True, 70.9, 'Sol', 'Salome']
+for indice, valor in enumerate(lista3):
+    print(f'indice {indice}: Valor {valor}')
+    print('---------------------------')

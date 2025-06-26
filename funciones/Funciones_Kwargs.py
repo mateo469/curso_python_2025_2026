@@ -10,6 +10,7 @@ def basico(**prueba):#Funciones con **args
     for clave, valor in prueba.items():
         print(f'Acceder a un dato {prueba['name']}')
         print(f'Clave: {clave}. Valor: {valor}')
+        print('--------------------------')
 basico(name = 'Maria', LastName= 'Mendez', age= 22, Sex = "M", weight= 66.3, height= 1.66)
 
 #Ejemplo de *args vs **kwargs
@@ -19,6 +20,7 @@ def combinado(*nombres, **region):
     for x, y in region.items():
         print('Regiones')
         print(f'Claves: {x}. Valores: {y}')
+        print('-----------------------------------------')
 combinado('Salome', 'Estrella','Santiago', 'Maria', region1= 'america del sur',
           region2= 'America central', region3= 'Africa')
 

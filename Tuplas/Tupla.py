@@ -57,3 +57,8 @@ x = list(tuples)
 x.remove("apple")
 tuples = tuple(x)
 print(tuples)
+
+#tupla usando for
+tupla_for = (1,2,3,4,4,5, 'Maria', 'Salome')
+for tp in tupla_for:
+    print(tp)

@@ -6,6 +6,8 @@ os.system("clears")
 #Crear una lista vacia
 Lista_Vacia = []
 print(f'Imprime la lista vacia {Lista_Vacia}')
+
+print('-----------------------------------------------')
 ##Agregar un elemento a la lista vacia
 Lista_Vacia.append('Hola')
 Lista_Vacia.append(5)#Agrega entero
@@ -19,10 +21,14 @@ for list in Lista_Vacia:
     print(list)
 
 print('-----------------------------------------------')
+#Agregar elementos al final de la lista.
+Lista_Vacia.extend('Fernanda')
+print(f'new element finally: {Lista_Vacia}')
+print('-------------------------------')
 
 ##Ejemplo 2
 #Crear una listas con elementos
-Lista = ['Hola','Bienvenidos','Yamileth','Mish','Ariana','Estrella','esmeralda']
+Lista = ['Hola','Bienvenidos','Yamileth','mish','Ariana','Estrella','esmeralda','Patricia', 'Sol', 'camila']
 ##Acceder a un elemento de la lista
 print(Lista[2::2])
 
@@ -31,46 +37,62 @@ if 'Santiago' in Lista:
     print('El objeto se encuentra en la lista')
 else:
     print('No se encuentra en la lista')
+    
  #Eliminar un elemento de la lista
-Lista.remove('Mish')
+Lista.remove('mish')
 print(f'Elemento eliminado: {Lista}') 
+print('----------------------------------------------------------------------------')
+
 #Modificar un elemento de la lista
 modificado = Lista[0] = 'Welcome'
 print(f'Lista Modificada: {modificado}')
+
 #Acceder al ultimo elemento de la lista
 UltimoElemento = Lista[-1]
 print(f'Ultimo elemento de la lista: {UltimoElemento}')
+
+print('-------------------------------------')
 #Insertar un nuevo elemento en la primera posicion
 Lista.insert(0, 'Tatiana')
 print(f'New position {Lista}')
 
 #Mostrar el tamaño de la lista
 longitud = len(Lista)
-print(f'Tamaño de la lista: {longitud}')
+print(f'Tamaño lista: {longitud}')
+
 #En que posicion se encuentra
 posicion = Lista.index('Ariana')
 print(f'Pocicion encontrada: {posicion}')
-Lista.pop()  # Quita y devuelve el último elemento
-#Listas ordenadas
-Lista.sort()
-print(f'Lista ordenada: {Lista}')
+
+print('-----------------------------------------------------------------')
+#Lista ordenadas incluyendo mayuscula y minuscula
+Lista.sort(key=str.upper)
+print(f'ordenada: {Lista}')
 
 #Listas desordenada
 Lista.reverse()
 print(f'Lista desordenadas:  {Lista}')
 
+print('-----------------------------------------------------')  
 #Elimina el ultimo elemento de la lista
-Lista.pop()
+Lista.pop()#elimina posicion donde se encuentra
 print(f'Ultimo eliminado elemento: {Lista}')
 
+#forma 3 de eliminacion
+del Lista[-1]
+print(Lista)
+
+print('-----------------------------------------------------')  
 #Verificar si un elemento esta en la lista
-print('Mish' in Lista)  # True si 4 está en la lista 
-  
+print('mish' in Lista)  # True si 4 está en la lista 
+print('-----------------------------------------------------------')
 ##recorrer la lista{}
 for i in Lista:
     print(i)
-    
+    print('-----------------------------------------------------------')
+ 
 #Ejemplo de una lista imprimiendo otra lista, conjunto, tuplas, diccionarios.
 listaCombinada= ['Hola', (1,2,3), {'Mario', 'Santiago'}, {'nombre': 'Salome'}]
 for combinada in listaCombinada:
     print(f'Combinada: {combinada}')
+    print('--------------')
