@@ -60,5 +60,6 @@ print(tuples)
 
 #tupla usando for
 tupla_for = (1,2,3,4,4,5, 'Maria', 'Salome')
-for hp in tupla_for:
-    print(hp)
+for tp in tupla_for:
+    print(tp)
+
