@@ -1,4 +1,3 @@
-
 ##Recorrer una lista con un for
 nombres = ['Maria', 'Yamileth', 'Salome', 'Karely']
 #Agregar el for para imprimir la lista
@@ -9,6 +8,12 @@ for lista in nombres:
 # Iterando en un rango de números
 for i in range(5):  # Desde 0 hasta 4
     print(i+1)
+    
+#Ejemplo basico del bucle for
+contador = 0
+for i in range(10):
+    print('Numero: ', contador)
+    contador += 1
     
 ##Ejemplo 3 usando el input
 limite = int(input('Ingrese el numero: \n'))
