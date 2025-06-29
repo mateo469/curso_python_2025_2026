@@ -41,3 +41,7 @@ print("Hola, mi nombre es {} y tengo {} años.".format(nombre, edad))
 nombre = 'Juan'
 edad = 30
 print("Hola, mi nombre es %s y tengo %d años de edad." % (nombre, edad))
+
+#imprimir la cantidad de numero que hay en la variable
+num = 3833839322884843
+print(len(str(num))) # cantidad de numeros
