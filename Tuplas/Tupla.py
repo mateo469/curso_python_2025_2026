@@ -42,24 +42,34 @@ concatenar = tupla1 + tupla2 + tupla3
 print(concatenar)
 
 for i in concatenar:
-    print(f'tuplas {concatenar} end=""')
+    print(f'tuplas {concatenar} ')
 
     # Las tuplas no se pueden modificar hay otra forma de hacerlo en convertirlas a listas
 tuples = ("apple", "banana", "cherry", "Magoes", "Kiwwi")
+#Convertir mi tupla a una lista
 y = list(tuples)
 y.append("orange")
+y.insert(0, 'pinacle')
 tuples = tuple(y)
-print(tuples)
+print('Tupla con elementos nuevos: ', tuples)
 
 # Elimnar un elemento de una tupla convirdiendola en lista
-tuples = ("apple", "banana", "cherry")
+tuples = ("apple", "banana", "cherry", 'chuwy', )
 x = list(tuples)
 x.remove("apple")
+x.pop()
 tuples = tuple(x)
-print(tuples)
+print('------------Las tuplas no se pueden modificar, se tienen que convertir a listas--------------------')
+print('Eliminacion de tuplas: ', tuples)
 
 #tupla usando for
 tupla_for = (1,2,3,4,4,5, 'Maria', 'Salome')
 for tp in tupla_for:
+    print('-------------------------------------------------------')
     print(tp)
+    
+#Imprimir una tupla mostrando el indice y el valor
+tupla_indice = ('Hola', 'Java', 'Python', 'C++', 'Ruby', 'HTML')
+for index, valor in enumerate(tupla_indice):
+    print(f'Indice: {index} valor: {valor}')
 

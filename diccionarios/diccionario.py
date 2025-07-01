@@ -55,13 +55,27 @@ print('-----------------------------------------')
 valores = mi_diccionario.values()
 print(f'Valores del diccionario: \n {valores}')
 
+#fromkeys() es una forma súper concisa de crear diccionarios en Python cuando tienes una colección de claves 
+# y quieres asignarles el mismo valor.
+print(mi_diccionario.fromkeys(('nombre', 'color')))
+#Ejemplo Crear un diccionario de configuración
+configuracion = ['Oscuro', 'Notificaciones', 'Autoguardado']
+config = dict.fromkeys(configuracion, True)
+print('Diccionario de configuracion: ', config)
+#diccionario de listas VACÍAS con comprensión para evitar referencias compartidas
+lista_claves = ['nombre', 'Apellido', 'Edad']
+datos = {clave: [] for clave in lista_claves}
+datos['nombre'].append('Maria')
+print('diccionario con listas vacias: ', datos)
+#Un diccionario desde un rango de números
+numeros = (1, 4)
+cuadrados = dict.fromkeys(numeros, 'Pendiente')
+print('Diccionario de numeros: ', cuadrados)
+
+print('------------Antes de clave y valor--------------------------------------------------')
 #El items()método devolverá cada elemento de un diccionario, como tuplas en una lista.
 clave_valor = mi_diccionario.items()
 print(clave_valor)
-
-#Eliminar una clave del diccionario incluyendo el valor
-eliminar = mi_diccionario.pop("ciudad")
-print(f'Actualizado de eliminacion: {mi_diccionario}')
 
 #Verificar si una clave de propiedad existe en el diccionario
 if 'estado' in mi_diccionario:

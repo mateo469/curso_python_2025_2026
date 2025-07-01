@@ -24,12 +24,14 @@ else:
 #Agregar un nuevo elemento al conjunto
 conjunto.add('Mish')
 print(conjunto)
+
 #Eliminar un elemento del conjunto
 conjunto.remove(True)
 print(f'tupla actualizada de eliminacion: {conjunto}')
 #Eliminar un elemento al azar
 conjunto.pop()
 print(f'elemento eliminado al azar: {conjunto}')
+
 #vaciar el conjunto
 #conjunto.clear
 
