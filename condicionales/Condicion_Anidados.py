@@ -1,4 +1,4 @@
-
+#La condición if en Python (y en muchos lenguajes) se usa para ejecutar un bloque de código solo si se cumple una condición.
 ##Ejemplo Basico de condiciones anidados.
 edad = 33
 pais = 'España'
@@ -14,7 +14,7 @@ else:
  #Ejemplo 2 de un login   
 usuario = 'admin'
 contraseña = '12345'
-if  usuario == 'admin':
+if  usuario == 'invitado':
   if contraseña == '1234':
     print('Acesso permitido ')
   else:

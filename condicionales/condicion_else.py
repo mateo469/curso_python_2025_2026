@@ -1,3 +1,5 @@
+#La cláusula else define un bloque de código que se ejecuta si la condición en un if (o elif) no se cumple.
+
 
 ##Ejemplo basico de condicionales, if, else
 edad = 17

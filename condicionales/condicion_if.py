@@ -1,6 +1,4 @@
-
-
-##Ejemplo basico del condicional if, ejecula la condicion if si la condicion se cumple de lo contrario
+#Ejemplo basico del condicional if, ejecula la condicion if si la condicion se cumple de lo contrario
 #si la codicion es falsa la condicion if se ignora al momento de ejecutar.
 #Ejemplo Basico
 edad =16

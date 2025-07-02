@@ -1,4 +1,4 @@
-#
+
 # Solicitar el nombre de la fruta
 fruta = input('Ingrese el nombre de la fruta (manzana, limon, naranja, fresa, banana):\n')
 
