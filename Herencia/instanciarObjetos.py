@@ -1,0 +1,16 @@
+from Vehiculos import *
+
+coche1 = Vehiculos('Nissan', 'NP300')
+camioneta = Coche('Toyota', 'HILLUX 2029', 'Gris', 4, '90')
+moto = Motocicleta('Italika', 'FT 150', 'Negra', '120')
+print(coche1.marca)
+#coche1.arrancar()
+coche1.frenar()
+camioneta.acelerar()
+camioneta.frenar()
+camioneta.arrancar()
+camioneta.infoCoche()
+moto.infoMot()
+moto.arrancar()
+moto.frenar()
+moto.hacerCaballito()

@@ -1,14 +1,15 @@
 #Aprenderemos acerca de la programacion orientada a objeto
 class Perro:
     bravo = 'No es bravo' #La variables de clases se declaran dentro de la clase pero fuera del constructor
-    def __init__(self, nombre,color,raza,edad):
+    def __init__(self, nombre,color,raza,edad): #__init__ es un método especial que se llama automáticamente 
+       #cuando creas una instancia de una clase.
        self.nombre = nombre #Las variables dentro del constructor se conocen como variables de instancias
        self.color = color
        self.raza = raza
        self.edad = edad
        
        
-    def ladra(self):
+    def ladra(self):#self siempre va primero en los métodos de instancia y representa al objeto que se está creando.
      print('Wouuu')
      
     def informacion(self):
