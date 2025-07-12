@@ -10,7 +10,7 @@
 #Ejemplo basico 2
 """with open('Archivos\\sql.txt') as file:
     print(file.read())
-    print(file.closed)"""
+    print(file.close())"""
     
 #Lectura de archivos linea por lineas
 """with open('Archivos\\sql.txt', 'r', encoding='utf-8') as file:
@@ -42,6 +42,7 @@ with open('archivo.json', 'r', encoding='utf-8') as archivo:
 try:
     with open('Archivos\\sql.txt') as archivo:
         leer = archivo.read()
+        archivo.close()
         print(leer)
 except FileNotFoundError:
     print('El directorio del archivo no a sido encontrado')

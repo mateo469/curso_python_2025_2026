@@ -1,0 +1,2 @@
+
+#ejemplo basico de arrays

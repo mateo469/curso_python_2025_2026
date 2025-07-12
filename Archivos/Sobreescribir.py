@@ -6,7 +6,6 @@ texto = '¿Te gustaría sobrescribir un archivo de texto, Excel, imagen u otro t
 with open('archi.txt', 'a') as file: #'a' añade contenido al final sin borrar lo anterior
     file.write(texto)
 
-
 #Abrir el archivo sobre escrito
 with open('archi.txt') as archivo:
     leer = archivo.read()

@@ -42,7 +42,8 @@ def informacion(primer_nombre, apellido, edad):
    print('hola ' + primer_nombre + ' ' + apellido )
    print('Tienes ' + str(edad))
 nombre = 'Mario'
-informacion(nombre, 'Mendez', 33)
+apellid = 'Ruvalcaba'
+informacion(nombre, apellid, 33)
 
 #ejemplo
 def saluda(nombre="amigo"):
