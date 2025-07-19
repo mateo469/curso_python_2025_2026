@@ -22,6 +22,4 @@ while (valor := input("Ingresa algo: ")) != "salir":
     print(f"Dijiste: {valor}")
 
 #ejemplo 3
-linea = 'Hola mundo'
-while (linea := f.readline()):
-    print(linea)
+

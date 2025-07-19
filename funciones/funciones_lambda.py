@@ -4,11 +4,17 @@
 explícito. Se utilizan principalmente para definir funciones simples de una sola línea sin necesidad 
 de usar def. La sintaxis general es:"""
 #Sintaxis: lambda argumentos: expresión
-
+#Ejemplo basico de una funcion lamda
+multp = lambda x: x * 5
+print(multp(10))
 #Ejemplo simple de funciones lambda suma
 suma = lambda a, b : a + b
 #imprimir la funcion
 print(suma(10, 20))
+
+#Ejemplo de mostrar nombre completo, edad, sexo
+nombre_completo = lambda nombre, apellido, edad, sexo: f'Nombre completo: {nombre} {apellido} edad, {edad} sexo, {sexo}'
+print(nombre_completo('Jessica', 'Gonzalez', 25, 'Femenino'))
 
 #Ejemplo simple 2 saludo
 mensaje = lambda : 'Hola mundo'

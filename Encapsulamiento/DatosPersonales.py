@@ -67,6 +67,6 @@ class Persona:
         print(f'Fche de Nacimiento: {self.get_fecha_nacimiento()}')
         
 #Imprimir los objetos
-persona1 = Persona('Salome', 'Herrera vargas', 23, 'Femenino', 'MOLMNOPDJHDHDSH', '6636337237H', '08/09(2001)')
+persona1 = Persona('Maria Belen', 'Mendez Garcia', 23, 'Femenino', 'MOLMNOPDJHDHDSH', '6636337237H', '08/09(2001)')
 persona1.caminar()   
 persona1.imprimir_datos()
