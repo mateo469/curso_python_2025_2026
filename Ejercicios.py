@@ -16,7 +16,7 @@ while True:
     except ValueError:
         print("Error: La calificación debe ser un número (entero o decimal). Intente de nuevo.")
 
-if calificacion >= 6:
+if calificacion >= 70:
     print(f"{nombre} aprobó con una calificación de {calificacion}.")
 else:
     print(f"{nombre} reprobó con una calificación de {calificacion}.")

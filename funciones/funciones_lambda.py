@@ -34,8 +34,16 @@ print(multiplicar(5, 6))
 
 #ejemplo 6 Ordenar una lista de tuplas por el segundo elemento
 lista = [('Juan', 25), ('Maria', 21), ('Ariana', 23), ('Pedro', 19)]
-ordenar = sorted(lista, key=lambda x: x[1])
+ordenar = sorted(lista, key=lambda x: x[0])
 print(ordenar)
+
+#Ordenar tuplas
+estudientes = ('Juan', 'Ana', 'Maria', 'Camila')
+estudientes = sorted(estudientes, reverse=False)
+print('---------------------------------------')
+#Crear for para imprimir los estudiantes
+for indice, valor in enumerate(estudientes):
+    print(f'index {indice}, values {valor}')
 
 #Ejemplo 7 numeros pares, impares
 numeros = [1,2,3,4,5,6,7,8,9,10]
