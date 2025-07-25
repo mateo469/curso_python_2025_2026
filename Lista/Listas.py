@@ -96,3 +96,17 @@ listaCombinada= ['Hola', (1,2,3), {'Mario', 'Santiago'}, {'nombre': 'Salome'}]
 for combinada in listaCombinada:
     print(f'Combinada: {combinada}')
     print('--------------')
+    
+#Ejemplo de una lista de prueba aplicando lo aprendido
+conocimiento = ['maria', 'Ana', 'Pedro', 'jessica', 'Fatima', 'Berenice', 'lucia', 'Estrella', 'ximena']
+#Acceder a un elemento
+print(conocimiento[1:3])
+#agregar un nuevo elemento a la lista
+conocimiento.append('daniela')
+print(conocimiento)
+#Ordenar la lista
+conocimiento.sort()
+print('fallas en el ordenamiento', conocimiento)
+#Solucionar el detalle del ordenamiento ignorando mayusculas y minusculas
+conocimiento.sort(key=str.lower)
+print('Lista correcta: ', conocimiento)

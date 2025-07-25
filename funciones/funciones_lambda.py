@@ -45,7 +45,7 @@ print('---------------------------------------')
 for indice, valor in enumerate(estudientes):
     print(f'index {indice}, values {valor}')
 
-#Ejemplo 7 numeros pares, impares
+#Ejemplo 7 numeros pares, impares, usando filter
 numeros = [1,2,3,4,5,6,7,8,9,10]
 pares = list(filter(lambda x: x % 2==0, numeros))
 impar = list(filter(lambda x: x % 2 !=0, numeros))
@@ -63,3 +63,10 @@ print(ordenar_diccionario)
 lista = [1,2,3,4,5]
 dobles = list(map(lambda X: X**2, lista))
 print(dobles)
+
+#Ejemplo 10 usando funcion lambda edades mayores de edad y menores de edad
+edades = [12, 15, 16, 18, 22, 33, 45, 50, 60, 70, 80, 90, 100]
+mayores = list(filter(lambda x: x >= 18, edades))
+menor = list(filter(lambda x: x < 18, edades))
+print('Edades mayor: ', mayores)
+print('Edades menor: ', menor)

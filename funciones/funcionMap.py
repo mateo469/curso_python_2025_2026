@@ -13,14 +13,15 @@ resultado = list(map(lambda x: x * 2, lista))
 print(resultado)
 
 #Ejemplo de una listas de tupla
-tuplas = (['Pantalor', 20],
+tuplas = (['Pantalon', 20],
           ['Camisa', 50],
           ['zapatos', 40],
           ['calzatas', 10],
           )
 buy = lambda datos: (datos[0], datos[1]*0.06)
 buy = list(map(buy, tuplas))
-print(buy)
+for i in buy:
+    print(f'Producto: {i[0]}, precio: {i[1]}')
 
 #Convertir textos a mayusculas
 nombres = ["mateo", "luis", "ana"]

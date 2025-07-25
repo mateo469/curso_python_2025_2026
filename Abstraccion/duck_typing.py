@@ -59,3 +59,14 @@ mago = Mago()
 
 batalla(guerrero)  # ¡Espadazo!
 batalla(mago)      # ¡Bola de fuego!
+
+
+"""
+Conclusiones
+Python es un lenguaje que soporta el duck typing, lo que hace que el tipo de los objetos no sea tan relevante, 
+siendo más importante lo que pueden hacer (sus métodos).
+Otros lenguajes como Java no soporta el duck typing, pero se puede conseguir un comportamiento similar 
+cuando los objetos comparten un interfaz (si existe herencia entre ellos). Este concepto relacionado es 
+el polimorfismo.
+El duck typing está en todos lados, desde la función len() hasta el uso del operador *.
+"""

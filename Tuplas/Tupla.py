@@ -30,21 +30,18 @@ print(f'Veces repetidas {contar}')
 # Ejemplo 3 de tuplas
 tupla1 = (1, 2, 3, 4, 5)
 tupla2 = (5, 6, 7, 8)
-tupla3 = ('pais', 'Salomw', 23, 1.67)
+tupla3 = ('Mexico', 'Salomw', 23, 1.67)
 # desempaquetar tuplas
 pais, nombre, edad, altura = tupla3
-print(f'nombre: {nombre}')
+print(f'nombre: {pais}')
 a, b, *c = tupla3
 print(f'Resto tupla {c}')
 
 # Concatenar tuplas
 concatenar = tupla1 + tupla2 + tupla3
-print(concatenar)
+print('Tuplas concatenadas: ', concatenar)
 
-for i in concatenar:
-    print(f'tuplas {concatenar} ')
-
-    # Las tuplas no se pueden modificar hay otra forma de hacerlo en convertirlas a listas
+# Las tuplas no se pueden modificar hay otra forma de hacerlo en convertirlas a listas
 tuples = ("apple", "banana", "cherry", "Magoes", "Kiwwi")
 #Convertir mi tupla a una lista
 y = list(tuples)
