@@ -96,6 +96,7 @@ def saludar(idioma):
         return lambda nombre: f'Hello {nombre}'
     elif idioma == 'fr':
         return lambda nombre: f'Bonjour {nombre}'
-enviar_saludo = saludar('')    
+enviar_saludo = saludar('fr')    
+print(enviar_saludo('Martha'))
 
 

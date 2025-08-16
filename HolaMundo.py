@@ -13,7 +13,8 @@ print('Hola mundo comillas simples')
 ##Declarar una variable que contenga un hola mundo
 primerVariable = 'Hola mundo'
 #Imprimir la variable creada.
-print(primerVariable)
+print(primerVariable, end=' ')
+print('Hola java')
 
 #Tambien podemos ver que tipo de dato es la variable creada.
 print(type(primerVariable)) ##Tipo str, String

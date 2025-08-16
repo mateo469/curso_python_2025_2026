@@ -35,11 +35,9 @@ print('Devolver octal {:o} octal'.format(num))
 print('Devolver hexadecimal {:x} hexadecimal'.format(num))
 print('Devolver  {:e} notacion cientifica'.format(num))
 
-
 #Índices con nombre
 myorder = "I have a {carname}, it is a {model}."
 print(myorder.format(carname = "Ford", model = "Mustang"))
-
 
 """price = 49
 txt = "The price is {} dollars"

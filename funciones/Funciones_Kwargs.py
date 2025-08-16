@@ -4,7 +4,7 @@ argumentos con nombre (clave-valor). Es útil cuando no sabes cuántos argumento
 #Aprenderemos acerca de la funciones KWARGS
 #Ejemplo basico
 import os
-os.system("clears")
+os.system("cls")
 
 def basico(**prueba):#Funciones con **args
     for clave, valor in prueba.items():

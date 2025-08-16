@@ -15,3 +15,15 @@ if a > 0 and b > a:
     print("Ambas condiciones son verdaderas") 
 elif a > 0 or b < a:
      print("Al menos una condición es verdadera")  # ✅ 
+     
+#Ejemplo practico
+edad = 20
+tiene_licencia = True
+# Debe ser mayor de edad y tener licencia
+mayor = edad >= 18 and tiene_licencia
+print(mayor)  # True
+# Puede conducir si es mayor de edad o tiene permiso especial
+permiso_especial = False
+print(edad >= 18 or permiso_especial)  # True
+# Verificar que NO sea menor de edad
+print(not (edad < 18))  # True

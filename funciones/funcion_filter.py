@@ -30,12 +30,23 @@ impar = list(filter(impares, numeros))
 print('Numeros pares: ', pares)
 print('Numeros impar: ', impar)
 print('------------------------------------------------------------------------------------------')
+
 #Ejemplo 2 buscar las edades mayores a 18 años y menores a 18 en una lista, utilizando funcion y filter.
 def es_mayor_edad(edad):
     return edad >= 18
 def menor_edad(edad):
-    return edad < 18
+    return edad >= 18
 edades = [ 10, 15, 18, 22, 33, 35, 40, 50, 55, 60, 66, 70, 80, 90, 100]
 mayores = list(filter(es_mayor_edad, edades))
 menor = list(filter(menor_edad, edades))
 print('Edades mayores a 18 años: ', mayores)
+
+#Listas de amigos
+amigos = [('Mario', 17),
+          ('Sol', 14),
+          ('Ana', 34),
+          ('Barbara', 21),
+          ('Atocha', 19)]
+edad = lambda datos: datos[1] >= 18
+lista_amigos = list(filter(edad, amigos))
+print(f'Listas de amigos mayores de edad {lista_amigos}')

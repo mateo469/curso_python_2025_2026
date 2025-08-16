@@ -62,6 +62,7 @@ print(mi_diccionario.fromkeys(('nombre', 'color')))
 configuracion = ['Oscuro', 'Notificaciones', 'Autoguardado']
 config = dict.fromkeys(configuracion, True)
 print('Diccionario de configuracion: ', config)
+
 #diccionario de listas VACÍAS con comprensión para evitar referencias compartidas
 lista_claves = ['nombre', 'Apellido', 'Edad']
 datos = {clave: [] for clave in lista_claves}

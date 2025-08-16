@@ -17,7 +17,8 @@ Si el iterable está vacío y no se proporciona un valor inicial, lanza una exce
 La función que se pasa debe aceptar exactamente dos argumentos.
 
 """
-
+import os
+os.system('cls')
 from functools import reduce
 #Ejemplo basico de reducir una lista de numeros
 numeros = [1, 2, 3, 4, 5]
@@ -28,7 +29,9 @@ print(resultado)
 
 #ejemplo 2 concatenar una lista de letras a una cadena de texto
 letras = ['H', 'o', 'l', 'a']
-concatenar = lambda a, b: a + b
+def concatenar(d, f):
+    return d + f
+#concatenar = lambda a, b: a + b
 palabra = reduce(concatenar, letras)
 print('Palabra completa: ', palabra)
 
@@ -46,7 +49,7 @@ resultado1 = reduce(lambda a, b: a * b, factorial1)
 print('Factorial sin usar funcion: ', resultado1)
 
 #Ejemplo de reduce con una lista de tuplas
-tuplas = [(1, 2), (3, 4), (5, 6)]
+tuplas = [(1, 2), (3, 4), (5, 6), (9, 12)]
 #def sumar_tuplas(x, y):
  #   return x[0] + y[0], x[1] + y[1]
  #Resultado de la suma de tuplas sin usar la funcion
@@ -59,5 +62,12 @@ cadenas = ['Python', 'es', 'genial', 'y', 'divertido', 'para', 'aprender', 'Prog
 def concatenar_cadenas(x, y):
     return x + ' ' + y
 concatenadas = reduce(concatenar_cadenas, cadenas)
-
 print('Cadena concatenada: ', concatenadas)
+
+#Ejemplo de reduce,
+texto = ['pandas', 'es', 'una', 'libreria', 'de',
+         'python','usada','en','el','analisis','de','datos']
+def palabra_completa(a, b):
+    return a + ' '+ b
+completado = reduce(palabra_completa, texto).capitalize()
+print(completado)

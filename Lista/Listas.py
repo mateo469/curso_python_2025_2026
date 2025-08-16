@@ -88,17 +88,17 @@ print('mish' in Lista)  # True si 4 está en la lista
 print('-----------------------------------------------------------')
 ##recorrer la lista{}
 for i in Lista:
-    print(i)
+    print(i, end='')
     print('-----------------------------------------------------------')
  
 #Ejemplo de una lista imprimiendo otra lista, conjunto, tuplas, diccionarios.
 listaCombinada= ['Hola', (1,2,3), {'Mario', 'Santiago'}, {'nombre': 'Salome'}]
 for combinada in listaCombinada:
-    print(f'Combinada: {combinada}')
+    print(f'Combinada: {combinada}', end='')
     print('--------------')
     
 #Ejemplo de una lista de prueba aplicando lo aprendido
-conocimiento = ['maria', 'Ana', 'Pedro', 'jessica', 'Fatima', 'Berenice', 'lucia', 'Estrella', 'ximena']
+conocimiento = ['maria', 'Ana', 'Pedro', 'jessica', 'Fatima', 'Berenice', 'lucia', 'Estrella', 'ximena', '❤️']
 #Acceder a un elemento
 print(conocimiento[1:3])
 #agregar un nuevo elemento a la lista

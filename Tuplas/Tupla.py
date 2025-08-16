@@ -5,15 +5,19 @@ se pueden modificar (ni añadir, eliminar ni cambiar elementos) una vez que han 
 # Crear tupla vacia
 tupla_Vacia = ()
 print(f'Tupla Vacia: {tupla_Vacia}')
+
 # Ver qu tipo de elemento es
 print(type(tupla_Vacia))
 # Ejemplo 2
 tupla = ('Maria', 'Salome', 23, True, 1.55, 'Marcos', 23, 'Mish')
+
 # Acceder a un elemento de una tupla
 print(f'Acceder a un elemento {tupla[1]} ')
+
 # Tamaño de la tupla
 longitud = len(tupla)
 print(f'Tamaño de la tupla: {longitud}')
+
 # posicion que se encuentra un valor de la tupla
 position = tupla.index(23)
 print(f'Posicion encontrada: {position}')
@@ -62,9 +66,8 @@ print('Eliminacion de tuplas: ', tuples)
 #tupla usando for
 tupla_for = (1,2,3,4,4,5, 'Maria', 'Salome')
 for tp in tupla_for:
-    print('-------------------------------------------------------')
-    print(tp)
-    
+    print(tp, end=' ')
+print('-------------------------------------------------------------------------')    
 #Imprimir una tupla mostrando el indice y el valor
 tupla_indice = ('Hola', 'Java', 'Python', 'C++', 'Ruby', 'HTML')
 for index, valor in enumerate(tupla_indice):
