@@ -68,6 +68,6 @@ print('Suma de días:', tiempo.strftime("%d/%m/%Y"), "- Año en palabras:", num2
 
 #calcular la diferencia de 2 fechas
 date1 = datetime.now()
-date2 = datetime(2022, 10, 3, 14, 20, 2)
+date2 = datetime(2000, 12, 10, 14, 20, 2)
 diferencia = date1 - date2
 print('Diferencias de fechas: ', diferencia)
